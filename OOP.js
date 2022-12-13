@@ -277,19 +277,7 @@ console.log(determineWhoCursedTheMost([{me: 10, spouse: 5 }, { me: 5, spouse: 10
 // Examples:
 // rgbToHex({red: 0, green: 128, blue: 192}) ➞ "#0080c0";
 
-function rgbToHex (rgb) {
-    var hex = '#';
-    for (var key in rgb) {
-        var hexValue = rgb[key].toString(16);
-        if (hexValue.length == 1) {
-            hexValue = '0' + hexValue;
-        }
-        hex += hexValue;
-    }
-    return hex;
-}
 
-console.log(rgbToHex({red: 0, green: 128, blue: 192}));
 
 // Create a function that takes an amount of monetary change (e.g. 47 cents) and breaks
 // down the most efficient way that change can be made using USD quarters, dimes,
