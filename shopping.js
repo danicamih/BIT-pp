@@ -46,9 +46,7 @@
     var fruit = new Product('apple', 238, '2/02/2023');
     var dessert = new Product('donut', 150, '12/02/2023');
     var drink = new Product('juice', 120, '5/02/2023');
-    var meat = new Product('chicken', 300, '1/02/2023');
-    var vegetables = new Product('tomato', 100, '1/04/2023');
-    var cheese = new Product('cheese', 200, '1/03/2023');
+
 
     function ShoppingBag() {
         this.listOfProducts = [];
@@ -91,18 +89,14 @@
     console.log(fruit.getInfo());
     console.log(dessert.getInfo());
     console.log(drink.getInfo());
-    console.log(meat.getInfo());
-    console.log(vegetables.getInfo());
-    console.log(cheese.getInfo());
+ 
 
     var shoppingBag = new ShoppingBag();
     shoppingBag.addProduct(bread);
     shoppingBag.addProduct(fruit);
     shoppingBag.addProduct(dessert);
     shoppingBag.addProduct(drink);
-    shoppingBag.addProduct(meat);
-    shoppingBag.addProduct(vegetables);
-    shoppingBag.addProduct(cheese);
+
 
     console.log(shoppingBag.listOfProducts);
     console.log(shoppingBag.averagePrice());
@@ -115,7 +109,7 @@
         this.validUntil = new Date(validUntil);
     }
 
-    var paymentCard = new PaymentCard(1000, 'active', '12/12/2023');
+    var paymentCard = new PaymentCard(300, 'active', '12/12/2023');
 
     function checkoutAndBuy(shoppingBag, paymentCard) {
         if (paymentCard.balance >= shoppingBag.calculateTotalPrice()) {
