@@ -80,3 +80,20 @@ var a = [
         sumOfMarks += students[i][1];
     }
 
+    // Create a function that converts color in RGB format to Hex format.
+    // Examples:
+    // rgbToHex({red: 0, green: 128, blue: 192}) ➞ "#0080c0";
+    
+    function rgbToHex (rgb) {
+        var hex = '#';
+        for (var key in rgb) {
+            var hexValue = rgb[key].toString(16);
+            if (hexValue.length == 1) {
+                hexValue = '0' + hexValue;
+            }
+            hex += hexValue;
+        }
+        return hex;
+    }
+    
+    console.log(rgbToHex({red: 0, green: 128, blue: 192}));

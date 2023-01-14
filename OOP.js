@@ -279,6 +279,7 @@ console.log(determineWhoCursedTheMost([{me: 10, spouse: 5 }, { me: 5, spouse: 10
 
 
 
+
 // Create a function that takes an amount of monetary change (e.g. 47 cents) and breaks
 // down the most efficient way that change can be made using USD quarters, dimes,
 // nickels and pennies. Your function should return an object.
